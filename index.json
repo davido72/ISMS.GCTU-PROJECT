@@ -1,0 +1,2611 @@
+{
+  "version": 1,
+  "root": "c:\\Users\\user\\OneDrive\\Desktop\\ISMS PROJECT",
+  "generatedAt": 1789332645291,
+  "files": {
+    "generate_proposal_docx.py": {
+      "path": "generate_proposal_docx.py",
+      "language": "python",
+      "role": "other",
+      "hash": "4aaa54aa5bad209b6a42b60fd70d419f434e344a",
+      "size": 30236,
+      "lines": 347,
+      "symbols": [
+        {
+          "name": "set_cell_background",
+          "kind": "function",
+          "line": 18,
+          "signature": "def set_cell_background(cell, fill_color):"
+        },
+        {
+          "name": "create_proposal_document",
+          "kind": "function",
+          "line": 26,
+          "signature": "def create_proposal_document():"
+        },
+        {
+          "name": "add_heading_1",
+          "kind": "method",
+          "line": 69,
+          "signature": "def add_heading_1(text):"
+        },
+        {
+          "name": "add_heading_2",
+          "kind": "method",
+          "line": 79,
+          "signature": "def add_heading_2(text):"
+        },
+        {
+          "name": "add_heading_3",
+          "kind": "method",
+          "line": 89,
+          "signature": "def add_heading_3(text):"
+        },
+        {
+          "name": "add_p",
+          "kind": "method",
+          "line": 99,
+          "signature": "def add_p(text):"
+        }
+      ],
+      "imports": [
+        "sys",
+        "subprocess",
+        "docx",
+        "docx.shared",
+        "docx.enum.text",
+        "docx.enum.table",
+        "docx.oxml",
+        "docx.oxml.ns"
+      ],
+      "indexedAt": 1789332644475
+    },
+    "generate_proposal_docx.js": {
+      "path": "generate_proposal_docx.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "c49e09f25a0e0c8012bad234c0c0968d73386933",
+      "size": 60011,
+      "lines": 544,
+      "symbols": [
+        {
+          "name": "createCell",
+          "kind": "function",
+          "line": 10,
+          "signature": "function createCell(text, isHeader = false, widthPercent = 20, bgColor = null) {",
+          "exported": false
+        },
+        {
+          "name": "createTable",
+          "kind": "function",
+          "line": 35,
+          "signature": "function createTable(headers, rowsData, widths) {",
+          "exported": false
+        },
+        {
+          "name": "headerCells",
+          "kind": "function",
+          "line": 39,
+          "signature": "const headerCells = headers.map((h, i) => createCell(h, true, widths[i] || 20, \"1A365D\"));",
+          "exported": false
+        },
+        {
+          "name": "cells",
+          "kind": "function",
+          "line": 45,
+          "signature": "const cells = row.map((cellText, cIdx) => createCell(cellText, false, widths[cIdx] || 20, bg));",
+          "exported": false
+        },
+        {
+          "name": "addHeading",
+          "kind": "function",
+          "line": 56,
+          "signature": "function addHeading(text, level) {",
+          "exported": false
+        },
+        {
+          "name": "addParagraph",
+          "kind": "function",
+          "line": 94,
+          "signature": "function addParagraph(text, isItalic = false, isBold = false) {",
+          "exported": false
+        },
+        {
+          "name": "addCaption",
+          "kind": "function",
+          "line": 110,
+          "signature": "function addCaption(text) {",
+          "exported": false
+        },
+        {
+          "name": "addDiagramBox",
+          "kind": "function",
+          "line": 127,
+          "signature": "function addDiagramBox(diagramText, captionText) {",
+          "exported": false
+        },
+        {
+          "name": "paras",
+          "kind": "function",
+          "line": 129,
+          "signature": "const paras = lines.map(line => new Paragraph({",
+          "exported": false
+        },
+        {
+          "name": "buildDocx",
+          "kind": "function",
+          "line": 159,
+          "signature": "async function buildDocx() {",
+          "exported": false
+        }
+      ],
+      "imports": [
+        "fs",
+        "path",
+        "docx"
+      ],
+      "indexedAt": 1789332644496
+    },
+    "scratch/test_refresh_persistence.js": {
+      "path": "scratch/test_refresh_persistence.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "baee168abf7c7a52c2c6350e1e6ab7520faf1aac",
+      "size": 2268,
+      "lines": 70,
+      "symbols": [],
+      "imports": [
+        "fs",
+        "path",
+        "jsdom"
+      ],
+      "indexedAt": 1789332644516
+    },
+    "scratch/test_full_email_otp.js": {
+      "path": "scratch/test_full_email_otp.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "0f4537ff6386d929a2467b15ba7435de2a32c627",
+      "size": 2106,
+      "lines": 59,
+      "symbols": [
+        {
+          "name": "SUPABASE_URL",
+          "kind": "constant",
+          "line": 1,
+          "signature": "const SUPABASE_URL = \"https://cfwwmqbhqgytypypkyce.supabase.co\";",
+          "exported": false
+        },
+        {
+          "name": "ANON_KEY",
+          "kind": "constant",
+          "line": 2,
+          "signature": "const ANON_KEY = \"sb_publishable_erwDqEwgrgcEIKHWCQQU7w_U-ZWOQTw\";",
+          "exported": false
+        },
+        {
+          "name": "runTest",
+          "kind": "function",
+          "line": 4,
+          "signature": "async function runTest() {",
+          "exported": false
+        },
+        {
+          "name": "err",
+          "kind": "function",
+          "line": 33,
+          "signature": "const err = await otpRes.json().catch(() => ({}));",
+          "exported": false
+        },
+        {
+          "name": "verifyData",
+          "kind": "function",
+          "line": 51,
+          "signature": "const verifyData = await verifyRes.json().catch(() => ({}));",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332644543
+    },
+    "scratch/test_email_otp.js": {
+      "path": "scratch/test_email_otp.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "671294b6b36efcfced380b64caae5bfdbcda9c5d",
+      "size": 1683,
+      "lines": 49,
+      "symbols": [
+        {
+          "name": "SUPABASE_URL",
+          "kind": "constant",
+          "line": 1,
+          "signature": "const SUPABASE_URL = \"https://cfwwmqbhqgytypypkyce.supabase.co\";",
+          "exported": false
+        },
+        {
+          "name": "ANON_KEY",
+          "kind": "constant",
+          "line": 2,
+          "signature": "const ANON_KEY = \"sb_publishable_erwDqEwgrgcEIKHWCQQU7w_U-ZWOQTw\";",
+          "exported": false
+        },
+        {
+          "name": "testOtpEndpoints",
+          "kind": "function",
+          "line": 4,
+          "signature": "async function testOtpEndpoints() {",
+          "exported": false
+        },
+        {
+          "name": "otpData",
+          "kind": "function",
+          "line": 26,
+          "signature": "const otpData = await otpRes.json().catch(() => ({}));",
+          "exported": false
+        },
+        {
+          "name": "verifyData",
+          "kind": "function",
+          "line": 44,
+          "signature": "const verifyData = await verifyRes.json().catch(() => ({}));",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332644633
+    },
+    "scratch/test_student_views.js": {
+      "path": "scratch/test_student_views.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "62a0d6b26a5bd2db5a57dd882724c391806a655f",
+      "size": 2036,
+      "lines": 70,
+      "symbols": [],
+      "imports": [
+        "fs"
+      ],
+      "indexedAt": 1789332644656
+    },
+    "scratch/test_resolve.js": {
+      "path": "scratch/test_resolve.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "9edc7be9035b922c9bfd9366bfdcb7fb3b6b63c2",
+      "size": 591,
+      "lines": 17,
+      "symbols": [
+        {
+          "name": "SUPABASE_URL",
+          "kind": "constant",
+          "line": 1,
+          "signature": "const SUPABASE_URL = \"https://cfwwmqbhqgytypypkyce.supabase.co\";",
+          "exported": false
+        },
+        {
+          "name": "ANON_KEY",
+          "kind": "constant",
+          "line": 2,
+          "signature": "const ANON_KEY = \"sb_publishable_erwDqEwgrgcEIKHWCQQU7w_U-ZWOQTw\";",
+          "exported": false
+        },
+        {
+          "name": "testResolve",
+          "kind": "function",
+          "line": 4,
+          "signature": "async function testResolve() {",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332644658
+    },
+    "scratch/test_calendar_link.js": {
+      "path": "scratch/test_calendar_link.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "32983a832086069b963b62a4a747bc2bf4238987",
+      "size": 2457,
+      "lines": 65,
+      "symbols": [],
+      "imports": [
+        "fs"
+      ],
+      "indexedAt": 1789332644678
+    },
+    "js/validators.js": {
+      "path": "js/validators.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "b4e67b63a499e42a84b99b61428cf21de48af745",
+      "size": 7928,
+      "lines": 196,
+      "symbols": [
+        {
+          "name": "R",
+          "kind": "constant",
+          "line": 172,
+          "signature": "const R = 6371e3; // Earth's radius in meters",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332644687
+    },
+    "scratch/test_app_quicklogin.js": {
+      "path": "scratch/test_app_quicklogin.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "f9f0b04a7fbea5ac31141882f95097a7cb253818",
+      "size": 5805,
+      "lines": 161,
+      "symbols": [
+        {
+          "name": "DOMElement",
+          "kind": "class",
+          "line": 5,
+          "signature": "class DOMElement {",
+          "exported": false
+        },
+        {
+          "name": "getEl",
+          "kind": "function",
+          "line": 44,
+          "signature": "function getEl(id) {",
+          "exported": false
+        }
+      ],
+      "imports": [
+        "fs",
+        "vm"
+      ],
+      "indexedAt": 1789332644727
+    },
+    "js/supabaseClient.js": {
+      "path": "js/supabaseClient.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "575130073243869aceb46bca1d3350cf8806c825",
+      "size": 14939,
+      "lines": 399,
+      "symbols": [
+        {
+          "name": "s",
+          "kind": "function",
+          "line": 79,
+          "signature": "const s = (store.get('students') || []).find(st => (st.student_id || '').toUpperCase() === cleanId.toUpperCase());",
+          "exported": false
+        },
+        {
+          "name": "t",
+          "kind": "function",
+          "line": 82,
+          "signature": "const t = (store.get('teachers') || []).find(tc => (tc.staff_id || '').toUpperCase() === cleanId.toUpperCase());",
+          "exported": false
+        },
+        {
+          "name": "p",
+          "kind": "function",
+          "line": 85,
+          "signature": "const p = (store.get('parents') || []).find(pr => pr.phone_number === cleanId || (pr.email || '').toLowerCase() === cleanId.toLowerCase());",
+          "exported": false
+        },
+        {
+          "name": "a",
+          "kind": "function",
+          "line": 88,
+          "signature": "const a = (store.get('admins') || []).find(ad => (ad.staff_id || '').toUpperCase() === cleanId.toUpperCase());",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332644745
+    },
+    "scratch/simulate_browser_load.js": {
+      "path": "scratch/simulate_browser_load.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "6319860ec21306179b00dfcf42911939ead44319",
+      "size": 7026,
+      "lines": 192,
+      "symbols": [
+        {
+          "name": "DOMElement",
+          "kind": "class",
+          "line": 5,
+          "signature": "class DOMElement {",
+          "exported": false
+        },
+        {
+          "name": "getOrCreateElement",
+          "kind": "function",
+          "line": 44,
+          "signature": "function getOrCreateElement(id) {",
+          "exported": false
+        }
+      ],
+      "imports": [
+        "fs",
+        "vm"
+      ],
+      "indexedAt": 1789332644782
+    },
+    "js/store.js": {
+      "path": "js/store.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "826f21237ec769c53e67f1ee575c0b0fc1bee346",
+      "size": 27698,
+      "lines": 466,
+      "symbols": [
+        {
+          "name": "Store",
+          "kind": "class",
+          "line": 5,
+          "signature": "class Store {",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332644796
+    },
+    "js/pdfHelper.js": {
+      "path": "js/pdfHelper.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "2c3c78b2aa4a176ed80018f9ede09e6dfbf371cc",
+      "size": 19640,
+      "lines": 369,
+      "symbols": [
+        {
+          "name": "totalCredits",
+          "kind": "function",
+          "line": 7,
+          "signature": "const totalCredits = enrollments.reduce((acc, curr) => acc + Number(curr.credit_hours || 3), 0);",
+          "exported": false
+        },
+        {
+          "name": "rows",
+          "kind": "function",
+          "line": 8,
+          "signature": "const rows = enrollments.map((item, idx) => `",
+          "exported": false
+        },
+        {
+          "name": "rows",
+          "kind": "function",
+          "line": 76,
+          "signature": "const rows = grades.map((g, idx) => {",
+          "exported": false
+        },
+        {
+          "name": "student",
+          "kind": "function",
+          "line": 186,
+          "signature": "const student = (store.get(\"students\") || []).find(s => s.student_id === studentId) || {",
+          "exported": false
+        },
+        {
+          "name": "feeData",
+          "kind": "function",
+          "line": 193,
+          "signature": "const feeData = (store.get(\"fees\") || []).find(f => f.student_id === studentId) || {",
+          "exported": false
+        },
+        {
+          "name": "student",
+          "kind": "function",
+          "line": 210,
+          "signature": "const student = students.find(s => s.student_id === studentId || s.id === studentId) || students[0];",
+          "exported": false
+        },
+        {
+          "name": "studentGrades",
+          "kind": "function",
+          "line": 212,
+          "signature": "const studentGrades = grades.filter(g => g.student_id === student.student_id || g.student_id === student.id);",
+          "exported": false
+        },
+        {
+          "name": "course",
+          "kind": "function",
+          "line": 225,
+          "signature": "const course = courses.find(c => c.course_code === courseCode) || courses[0] || { course_code: courseCode, title: \"Course Roster\" };",
+          "exported": false
+        },
+        {
+          "name": "courseEnrollments",
+          "kind": "function",
+          "line": 228,
+          "signature": "const courseEnrollments = enrollments.filter(e => e.course_code === course.course_code);",
+          "exported": false
+        },
+        {
+          "name": "enrolledStudents",
+          "kind": "function",
+          "line": 230,
+          "signature": "const enrolledStudents = students.filter(s => courseEnrollments.some(e => e.student_id === s.student_id));",
+          "exported": false
+        },
+        {
+          "name": "rows",
+          "kind": "function",
+          "line": 233,
+          "signature": "const rows = list.map((s, idx) => `",
+          "exported": false
+        },
+        {
+          "name": "rows",
+          "kind": "function",
+          "line": 279,
+          "signature": "const rows = resitEnrollments.map((item, idx) => `",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332644813
+    },
+    "js/config.js": {
+      "path": "js/config.js",
+      "language": "javascript",
+      "role": "config",
+      "hash": "25338cefedde5c88f79cbd6f940f55b6cee85446",
+      "size": 2726,
+      "lines": 74,
+      "symbols": [
+        {
+          "name": "CONFIG",
+          "kind": "constant",
+          "line": 5,
+          "signature": "const CONFIG = {",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332644858
+    },
+    "scratch/check_modals.js": {
+      "path": "scratch/check_modals.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "386fccff4d26fcc19d399d3137eabb05e234c6b9",
+      "size": 392,
+      "lines": 13,
+      "symbols": [],
+      "imports": [
+        "fs"
+      ],
+      "indexedAt": 1789332644860
+    },
+    "js/app.js": {
+      "path": "js/app.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "20892d00f9e8396a5a50889da99c3ce5298ef39d",
+      "size": 67665,
+      "lines": 1145,
+      "symbols": [
+        {
+          "name": "App",
+          "kind": "class",
+          "line": 5,
+          "signature": "class App {",
+          "exported": false
+        },
+        {
+          "name": "update",
+          "kind": "function",
+          "line": 98,
+          "signature": "const update = () => {",
+          "exported": false
+        },
+        {
+          "name": "dayEvents",
+          "kind": "function",
+          "line": 198,
+          "signature": "const dayEvents = events.filter(e => {",
+          "exported": false
+        },
+        {
+          "name": "tooltipText",
+          "kind": "function",
+          "line": 213,
+          "signature": "const tooltipText = hasEvent ? dayEvents.map(ev => ev.title).join(' | ') : `Date: ${dateStr}`;",
+          "exported": false
+        },
+        {
+          "name": "selectedDateEvents",
+          "kind": "function",
+          "line": 223,
+          "signature": "const selectedDateEvents = events.filter(e => {",
+          "exported": false
+        },
+        {
+          "name": "fakeEvent",
+          "kind": "function",
+          "line": 385,
+          "signature": "const fakeEvent = { preventDefault: () => {} };",
+          "exported": false
+        },
+        {
+          "name": "unreadAlerts",
+          "kind": "function",
+          "line": 501,
+          "signature": "const unreadAlerts = roleAlerts.filter(a => !readAlertIds.includes(a.id));",
+          "exported": false
+        },
+        {
+          "name": "studentData",
+          "kind": "function",
+          "line": 527,
+          "signature": "const studentData = user.student_data || (store.get(\"students\") || []).find(s => s.student_id === user.student_id) || user;",
+          "exported": false
+        },
+        {
+          "name": "parentData",
+          "kind": "function",
+          "line": 544,
+          "signature": "const parentData = user.parent_data || allParents.find(p => p.email === user.email || p.id === user.id) || allParents[0];",
+          "exported": false
+        },
+        {
+          "name": "teacherData",
+          "kind": "function",
+          "line": 557,
+          "signature": "const teacherData = user.teacher_data || allTeachers.find(t => t.email === user.email || t.staff_id === user.staff_id || t.id === user.id) || allTeachers[0];",
+          "exported": false
+        },
+        {
+          "name": "firstAllowed",
+          "kind": "function",
+          "line": 738,
+          "signature": "const firstAllowed = Object.keys(allowedSectionMap).find(k => allowedSectionMap[k]);",
+          "exported": false
+        },
+        {
+          "name": "toDeleteIds",
+          "kind": "function",
+          "line": 886,
+          "signature": "const toDeleteIds = Array.from(checkboxes).map(cb => cb.getAttribute(\"data-id\"));",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332644883
+    },
+    "scratch/check_dupes.js": {
+      "path": "scratch/check_dupes.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "ec23f23e44dccc54532193aaedcf73744a593358",
+      "size": 535,
+      "lines": 22,
+      "symbols": [],
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "indexedAt": 1789332644884
+    },
+    "js/aiAssistant.js": {
+      "path": "js/aiAssistant.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "28c30ec0149bcc1df754951fc64969d45c5634c4",
+      "size": 32119,
+      "lines": 553,
+      "symbols": [
+        {
+          "name": "student",
+          "kind": "function",
+          "line": 178,
+          "signature": "const student = user.student_data || (store.get(\"students\") || []).find(s => s.student_id === user.student_id || s.email === user.email) || user;",
+          "exported": false
+        },
+        {
+          "name": "grades",
+          "kind": "function",
+          "line": 185,
+          "signature": "const grades = (store.get(\"grades\") || []).filter(g => g.student_id === studentId && g.is_published);",
+          "exported": false
+        },
+        {
+          "name": "courseList",
+          "kind": "function",
+          "line": 206,
+          "signature": "const courseList = grades.map(g => `• **${g.course_code}**: ${g.total_score || (g.assessment_score + g.exam_score)}% (Grade: **${g.letter_grade}**, GP: ${g.grad",
+          "exported": false
+        },
+        {
+          "name": "enrollments",
+          "kind": "function",
+          "line": 225,
+          "signature": "const enrollments = (store.get(\"enrollments\") || []).filter(e => e.student_id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "totalCredits",
+          "kind": "function",
+          "line": 230,
+          "signature": "const totalCredits = enrollments.reduce((acc, curr) => acc + Number(curr.credit_hours || 3), 0);",
+          "exported": false
+        },
+        {
+          "name": "coursesList",
+          "kind": "function",
+          "line": 231,
+          "signature": "const coursesList = enrollments.map((e, idx) => `${idx + 1}. **${e.course_code}** - ${e.course_title || e.course_code} (${e.credit_hours || 3} Credits) [${e.sem",
+          "exported": false
+        },
+        {
+          "name": "fee",
+          "kind": "function",
+          "line": 248,
+          "signature": "const fee = feesList.find(f => f.student_id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "attLogs",
+          "kind": "function",
+          "line": 280,
+          "signature": "const attLogs = (store.get(\"attendance\") || []).filter(a => a.student_id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "enrollments",
+          "kind": "function",
+          "line": 281,
+          "signature": "const enrollments = (store.get(\"enrollments\") || []).filter(e => e.student_id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "presentCount",
+          "kind": "function",
+          "line": 287,
+          "signature": "const presentCount = attLogs.filter(a => a.status === \"Present\").length;",
+          "exported": false
+        },
+        {
+          "name": "grades",
+          "kind": "function",
+          "line": 306,
+          "signature": "const grades = (store.get(\"grades\") || []).filter(g => g.student_id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "rows",
+          "kind": "function",
+          "line": 311,
+          "signature": "const rows = grades.map(g => `• **${g.course_code}** (${g.course_title || 'Course'}): CA: ${g.assessment_score}/30 | Exam: ${g.exam_score}/70 | Total: **${g.tot",
+          "exported": false
+        },
+        {
+          "name": "cells",
+          "kind": "function",
+          "line": 481,
+          "signature": "const cells = trimmed.split('|').filter((_, idx, arr) => idx > 0 && idx < arr.length - 1);",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332644906
+    },
+    "js/views/authView.js": {
+      "path": "js/views/authView.js",
+      "language": "javascript",
+      "role": "component",
+      "hash": "b85f069dc6afc4449b1bee74108e742b66fabc84",
+      "size": 37892,
+      "lines": 875,
+      "symbols": [
+        {
+          "name": "adminProfiles",
+          "kind": "function",
+          "line": 236,
+          "signature": "const adminProfiles = profiles.filter(p => p.role === \"admin\");",
+          "exported": false
+        },
+        {
+          "name": "matchedProfile",
+          "kind": "function",
+          "line": 240,
+          "signature": "const matchedProfile = adminProfiles.find(p =>",
+          "exported": false
+        },
+        {
+          "name": "matchedAdmin",
+          "kind": "function",
+          "line": 257,
+          "signature": "const matchedAdmin = adminList.find(a =>",
+          "exported": false
+        },
+        {
+          "name": "student",
+          "kind": "function",
+          "line": 290,
+          "signature": "const student = store.get(\"students\").find(s =>",
+          "exported": false
+        },
+        {
+          "name": "profile",
+          "kind": "function",
+          "line": 296,
+          "signature": "const profile = profiles.find(p => p.email === student.email) || {",
+          "exported": false
+        },
+        {
+          "name": "teacher",
+          "kind": "function",
+          "line": 317,
+          "signature": "const teacher = store.get(\"teachers\").find(t =>",
+          "exported": false
+        },
+        {
+          "name": "profile",
+          "kind": "function",
+          "line": 323,
+          "signature": "const profile = profiles.find(p => p.email === teacher.email) || {",
+          "exported": false
+        },
+        {
+          "name": "parent",
+          "kind": "function",
+          "line": 344,
+          "signature": "const parent = store.get(\"parents\").find(p =>",
+          "exported": false
+        },
+        {
+          "name": "profile",
+          "kind": "function",
+          "line": 350,
+          "signature": "const profile = profiles.find(p => p.email === parent.email) || {",
+          "exported": false
+        },
+        {
+          "name": "interval",
+          "kind": "function",
+          "line": 669,
+          "signature": "const interval = setInterval(() => {",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332644925
+    },
+    "js/views/adminView.js": {
+      "path": "js/views/adminView.js",
+      "language": "javascript",
+      "role": "component",
+      "hash": "f4470a72f73cbddf4d32512c5f19938574eb28e1",
+      "size": 255121,
+      "lines": 4386,
+      "symbols": [
+        {
+          "name": "activeStudents",
+          "kind": "function",
+          "line": 18,
+          "signature": "const activeStudents = students.filter(s => s.status !== \"Inactive\").length;",
+          "exported": false
+        },
+        {
+          "name": "totalExpected",
+          "kind": "function",
+          "line": 19,
+          "signature": "const totalExpected = fees.reduce((acc, f) => acc + (f.total_amount || 0), 0);",
+          "exported": false
+        },
+        {
+          "name": "totalCollected",
+          "kind": "function",
+          "line": 20,
+          "signature": "const totalCollected = fees.reduce((acc, f) => acc + (f.paid_amount || 0), 0);",
+          "exported": false
+        },
+        {
+          "name": "activeStudents",
+          "kind": "function",
+          "line": 112,
+          "signature": "const activeStudents = students.filter(s => s.status !== 'Inactive').length;",
+          "exported": false
+        },
+        {
+          "name": "set",
+          "kind": "function",
+          "line": 115,
+          "signature": "const set = (id, val) => { const el = document.getElementById(id); if (el) el.textContent = val; };",
+          "exported": false
+        },
+        {
+          "name": "deptSet",
+          "kind": "function",
+          "line": 125,
+          "signature": "const deptSet = new Set(courses.map(c => c.department).filter(Boolean));",
+          "exported": false
+        },
+        {
+          "name": "pendingGradeChanges",
+          "kind": "function",
+          "line": 136,
+          "signature": "const pendingGradeChanges = gradeLogs.filter(g => g.status === 'Pending' || !g.status).length;",
+          "exported": false
+        },
+        {
+          "name": "enrolledIds",
+          "kind": "function",
+          "line": 141,
+          "signature": "const enrolledIds = new Set(enrollments.map(e => e.student_id));",
+          "exported": false
+        },
+        {
+          "name": "unregistered",
+          "kind": "function",
+          "line": 142,
+          "signature": "const unregistered = students.filter(s => !enrolledIds.has(s.student_id) && s.status !== 'Inactive').length;",
+          "exported": false
+        },
+        {
+          "name": "pendingAdminReviews",
+          "kind": "function",
+          "line": 146,
+          "signature": "const pendingAdminReviews = admins.filter(a => a.status === 'Suspended' || a.status === 'Pending').length;",
+          "exported": false
+        },
+        {
+          "name": "securityAlerts",
+          "kind": "function",
+          "line": 150,
+          "signature": "const securityAlerts = systemAlerts.filter(a => (a.category || '').toLowerCase().includes('security'));",
+          "exported": false
+        },
+        {
+          "name": "failedLoginAlerts",
+          "kind": "function",
+          "line": 151,
+          "signature": "const failedLoginAlerts = systemAlerts.filter(a => (a.message || '').toLowerCase().includes('failed login'));",
+          "exported": false
+        },
+        {
+          "name": "activeSessions",
+          "kind": "function",
+          "line": 165,
+          "signature": "const activeSessions = admins.filter(a => a.status === 'Active').length + teachers.filter(t => t.status === 'Active').length;",
+          "exported": false
+        },
+        {
+          "name": "course",
+          "kind": "function",
+          "line": 186,
+          "signature": "const course = courses.find(c => c.course_code === e.course_code);",
+          "exported": false
+        },
+        {
+          "name": "data",
+          "kind": "function",
+          "line": 193,
+          "signature": "const data   = labels.map(d => deptMap[d].enrolled);",
+          "exported": false
+        },
+        {
+          "name": "activeStudentsCount",
+          "kind": "function",
+          "line": 218,
+          "signature": "const activeStudentsCount = students.filter(s => s.status !== \"Inactive\").length;",
+          "exported": false
+        },
+        {
+          "name": "deptSet",
+          "kind": "function",
+          "line": 225,
+          "signature": "const deptSet = new Set(courses.map(c => c.department).filter(Boolean));",
+          "exported": false
+        },
+        {
+          "name": "enrolledIds2",
+          "kind": "function",
+          "line": 233,
+          "signature": "const enrolledIds2  = new Set(enrollments2.map(e => e.student_id));",
+          "exported": false
+        },
+        {
+          "name": "unregistered2",
+          "kind": "function",
+          "line": 234,
+          "signature": "const unregistered2 = students.filter(s => !enrolledIds2.has(s.student_id) && s.status !== 'Inactive').length;",
+          "exported": false
+        },
+        {
+          "name": "pendingAdminReviews2",
+          "kind": "function",
+          "line": 235,
+          "signature": "const pendingAdminReviews2 = admins.filter(a => a.status === 'Suspended' || a.status === 'Pending').length;",
+          "exported": false
+        },
+        {
+          "name": "pendingGrades2",
+          "kind": "function",
+          "line": 240,
+          "signature": "const pendingGrades2 = gradeLogs.filter(g => g.status === 'Pending' || !g.status).length;",
+          "exported": false
+        },
+        {
+          "name": "failedLoginAlerts2",
+          "kind": "function",
+          "line": 242,
+          "signature": "const failedLoginAlerts2 = syAlerts2.filter(a => (a.message || '').toLowerCase().includes('failed login'));",
+          "exported": false
+        },
+        {
+          "name": "activeSessions2",
+          "kind": "function",
+          "line": 243,
+          "signature": "const activeSessions2 = admins.filter(a => a.status === 'Active').length + teachers.filter(t => t.status === 'Active').length;",
+          "exported": false
+        },
+        {
+          "name": "unassignedCourses",
+          "kind": "function",
+          "line": 605,
+          "signature": "const unassignedCourses = courses.filter(c => !c.teacher_id || c.teacher_id === 'unassigned');",
+          "exported": false
+        },
+        {
+          "name": "teacher",
+          "kind": "function",
+          "line": 663,
+          "signature": "const teacher = teachers.find(t => t.id === c.teacher_id || t.staff_id === c.teacher_id);",
+          "exported": false
+        },
+        {
+          "name": "filteredComplaints",
+          "kind": "function",
+          "line": 834,
+          "signature": "const filteredComplaints = complaints.filter(c => {",
+          "exported": false
+        },
+        {
+          "name": "stObj",
+          "kind": "function",
+          "line": 1040,
+          "signature": "const stObj = students.find(s => s.student_id === g.student_id || s.id === g.student_id);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 1734,
+          "signature": "const target = list.find(u => u.id === userId);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 1751,
+          "signature": "const target = admins.find(a => a.id === adminId);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 1970,
+          "signature": "const target = students.find(s => s.id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "targetCourse",
+          "kind": "function",
+          "line": 1988,
+          "signature": "const targetCourse = courses.find(c => c.id === courseId || c.course_code === courseId);",
+          "exported": false
+        },
+        {
+          "name": "teacher",
+          "kind": "function",
+          "line": 2002,
+          "signature": "const teacher = teachers.find(t => t.id === teacherId || t.staff_id === teacherId);",
+          "exported": false
+        },
+        {
+          "name": "activeTeacher",
+          "kind": "function",
+          "line": 2026,
+          "signature": "const activeTeacher = teachers.find(t =>",
+          "exported": false
+        },
+        {
+          "name": "assignedTeacher",
+          "kind": "function",
+          "line": 2038,
+          "signature": "const assignedTeacher = teachers.find(t => t.id === targetCourse.teacher_id || t.staff_id === targetCourse.teacher_id);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 2049,
+          "signature": "const target = grades.find(g => g.id === gradeId);",
+          "exported": false
+        },
+        {
+          "name": "foundTx",
+          "kind": "function",
+          "line": 2071,
+          "signature": "const foundTx = txs.find(t => t.reference.toUpperCase().includes(query) || t.student_id.toUpperCase() === query);",
+          "exported": false
+        },
+        {
+          "name": "foundFee",
+          "kind": "function",
+          "line": 2072,
+          "signature": "const foundFee = fees.find(f => f.student_id.toUpperCase() === query);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 2104,
+          "signature": "const target = transcripts.find(t => t.id === transcriptId);",
+          "exported": false
+        },
+        {
+          "name": "student",
+          "kind": "function",
+          "line": 2172,
+          "signature": "const student = store.get(\"students\").find(s => s.id === userId);",
+          "exported": false
+        },
+        {
+          "name": "teacher",
+          "kind": "function",
+          "line": 2187,
+          "signature": "const teacher = store.get(\"teachers\").find(t => t.id === userId);",
+          "exported": false
+        },
+        {
+          "name": "parent",
+          "kind": "function",
+          "line": 2201,
+          "signature": "const parent = store.get(\"parents\").find(p => p.id === userId);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 2230,
+          "signature": "const target = students.find(s => s.id === userId);",
+          "exported": false
+        },
+        {
+          "name": "p",
+          "kind": "function",
+          "line": 2244,
+          "signature": "const p = profiles.find(pr => pr.id === target.profile_id);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 2255,
+          "signature": "const target = teachers.find(t => t.id === userId);",
+          "exported": false
+        },
+        {
+          "name": "p",
+          "kind": "function",
+          "line": 2266,
+          "signature": "const p = profiles.find(pr => pr.id === target.profile_id);",
+          "exported": false
+        },
+        {
+          "name": "role",
+          "kind": "function",
+          "line": 2319,
+          "signature": "const role = adminRoles.find(r => r.id === targetId || r.name === targetName);",
+          "exported": false
+        },
+        {
+          "name": "admin",
+          "kind": "function",
+          "line": 2342,
+          "signature": "const admin = admins.find(a => a.id === targetId);",
+          "exported": false
+        },
+        {
+          "name": "profile",
+          "kind": "function",
+          "line": 2349,
+          "signature": "const profile = profiles.find(p => p.id === targetId || (admin && p.staff_id === admin.staff_id));",
+          "exported": false
+        },
+        {
+          "name": "teacher",
+          "kind": "function",
+          "line": 2388,
+          "signature": "const teacher = teachers.find(t => t.id === teacherId || t.staff_id === teacherId);",
+          "exported": false
+        },
+        {
+          "name": "existingIdx",
+          "kind": "function",
+          "line": 2389,
+          "signature": "const existingIdx = courses.findIndex(c => c.course_code === code);",
+          "exported": false
+        },
+        {
+          "name": "levelMatch",
+          "kind": "function",
+          "line": 2501,
+          "signature": "const levelMatch = (studentLevel, catLevel) => {",
+          "exported": false
+        },
+        {
+          "name": "sessionMatch",
+          "kind": "function",
+          "line": 2508,
+          "signature": "const sessionMatch = (studentSession, catSession) => {",
+          "exported": false
+        },
+        {
+          "name": "matchingStudents",
+          "kind": "function",
+          "line": 2515,
+          "signature": "const matchingStudents = students.filter(s =>",
+          "exported": false
+        },
+        {
+          "name": "idx",
+          "kind": "function",
+          "line": 2527,
+          "signature": "const idx = fees.findIndex(f => f.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "backup",
+          "kind": "function",
+          "line": 2595,
+          "signature": "const backup = backups.find(b => b.id === backupId || b.filename === backupId) || backups[0];",
+          "exported": false
+        },
+        {
+          "name": "backup",
+          "kind": "function",
+          "line": 2630,
+          "signature": "const backup = backups.find(b => b.id === backupId || b.filename === backupId);",
+          "exported": false
+        },
+        {
+          "name": "active",
+          "kind": "function",
+          "line": 2654,
+          "signature": "const active = students.filter(s => s.status !== 'Inactive').length;",
+          "exported": false
+        },
+        {
+          "name": "progRows",
+          "kind": "function",
+          "line": 2669,
+          "signature": "const progRows = Object.entries(byProg).map(([prog, c]) =>",
+          "exported": false
+        },
+        {
+          "name": "morning",
+          "kind": "function",
+          "line": 2747,
+          "signature": "const morning = students.filter(s => String(s.session||'').toLowerCase().includes('morning')).length;",
+          "exported": false
+        },
+        {
+          "name": "evening",
+          "kind": "function",
+          "line": 2748,
+          "signature": "const evening = students.filter(s => String(s.session||'').toLowerCase().includes('evening') || String(s.session||'').toLowerCase().includes('weekend')).length;",
+          "exported": false
+        },
+        {
+          "name": "deptRows",
+          "kind": "function",
+          "line": 2763,
+          "signature": "const deptRows = Object.entries(byDept).map(([dept, c]) => {",
+          "exported": false
+        },
+        {
+          "name": "rate",
+          "kind": "function",
+          "line": 2765,
+          "signature": "const rate = enrollments.length > 0 ? ((enrollments.filter(e => students.find(s => s.student_id === e.student_id && (s.department === dept || s.programme === de",
+          "exported": false
+        },
+        {
+          "name": "enrolled",
+          "kind": "function",
+          "line": 2812,
+          "signature": "const enrolled = enrollments.filter(e => e.course_code === c.course_code).length;",
+          "exported": false
+        },
+        {
+          "name": "deptRows",
+          "kind": "function",
+          "line": 2886,
+          "signature": "const deptRows = Object.entries(depts).map(([dept, c]) =>",
+          "exported": false
+        },
+        {
+          "name": "submitted",
+          "kind": "function",
+          "line": 2927,
+          "signature": "const submitted = grades.filter(g => g.course_code === c.course_code).length;",
+          "exported": false
+        },
+        {
+          "name": "pct",
+          "kind": "function",
+          "line": 2963,
+          "signature": "const pct = (n) => total > 0 ? ((n / total) * 100).toFixed(1) : '0.0';",
+          "exported": false
+        },
+        {
+          "name": "outstanding",
+          "kind": "function",
+          "line": 3002,
+          "signature": "const outstanding = courses.filter(c => !grades.some(g => g.course_code === c.course_code));",
+          "exported": false
+        },
+        {
+          "name": "totalExp",
+          "kind": "function",
+          "line": 3040,
+          "signature": "const totalExp = fees.reduce((acc, f) => acc + Number(f.total_amount || 0), 0);",
+          "exported": false
+        },
+        {
+          "name": "totalPaid",
+          "kind": "function",
+          "line": 3041,
+          "signature": "const totalPaid = fees.reduce((acc, f) => acc + Number(f.paid_amount || 0), 0);",
+          "exported": false
+        },
+        {
+          "name": "fullyPaid",
+          "kind": "function",
+          "line": 3043,
+          "signature": "const fullyPaid = fees.filter(f => Number(f.balance_due || 0) <= 0).length;",
+          "exported": false
+        },
+        {
+          "name": "channelRows",
+          "kind": "function",
+          "line": 3053,
+          "signature": "const channelRows = Object.entries(byChannel).map(([ch, c]) =>",
+          "exported": false
+        },
+        {
+          "name": "outstanding",
+          "kind": "function",
+          "line": 3086,
+          "signature": "const outstanding = fees.filter(f => Number(f.balance_due || 0) > 0);",
+          "exported": false
+        },
+        {
+          "name": "totalOwed",
+          "kind": "function",
+          "line": 3087,
+          "signature": "const totalOwed = outstanding.reduce((acc, f) => acc + Number(f.balance_due || 0), 0);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 3256,
+          "signature": "const target = admins.find(a => a.id === adminId);",
+          "exported": false
+        },
+        {
+          "name": "filtered",
+          "kind": "function",
+          "line": 3259,
+          "signature": "const filtered = admins.filter(a => a.id !== adminId);",
+          "exported": false
+        },
+        {
+          "name": "filteredProfiles",
+          "kind": "function",
+          "line": 3263,
+          "signature": "const filteredProfiles = profiles.filter(p => p.staff_id !== target.staff_id);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 3273,
+          "signature": "const target = admins.find(a => a.id === adminId);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 3291,
+          "signature": "const target = admins.find(a => a.id === adminId);",
+          "exported": false
+        },
+        {
+          "name": "profile",
+          "kind": "function",
+          "line": 3299,
+          "signature": "const profile = profiles.find(p => p.staff_id === target.staff_id);",
+          "exported": false
+        },
+        {
+          "name": "student",
+          "kind": "function",
+          "line": 3320,
+          "signature": "const student = students.find(s => s.id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "studentGrades",
+          "kind": "function",
+          "line": 3323,
+          "signature": "const studentGrades = grades.filter(g => g.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "studentEnrollments",
+          "kind": "function",
+          "line": 3324,
+          "signature": "const studentEnrollments = enrollments.filter(e => e.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "totalCredits",
+          "kind": "function",
+          "line": 3326,
+          "signature": "const totalCredits = studentEnrollments.reduce((acc, e) => acc + (e.credit_hours || 3), 0);",
+          "exported": false
+        },
+        {
+          "name": "parent",
+          "kind": "function",
+          "line": 3376,
+          "signature": "const parent = parents.find(p => p.id === parentId);",
+          "exported": false
+        },
+        {
+          "name": "newIds",
+          "kind": "function",
+          "line": 3384,
+          "signature": "const newIds = input.split(\",\").map(id => id.trim().toUpperCase()).filter(id => id.length > 0);",
+          "exported": false
+        },
+        {
+          "name": "validIds",
+          "kind": "function",
+          "line": 3387,
+          "signature": "const validIds = newIds.filter(id => students.some(s => s.student_id === id));",
+          "exported": false
+        },
+        {
+          "name": "invalidIds",
+          "kind": "function",
+          "line": 3388,
+          "signature": "const invalidIds = newIds.filter(id => !students.some(s => s.student_id === id));",
+          "exported": false
+        },
+        {
+          "name": "existingFee",
+          "kind": "function",
+          "line": 3401,
+          "signature": "const existingFee = fees.find(f => f.student_id === stId);",
+          "exported": false
+        },
+        {
+          "name": "st",
+          "kind": "function",
+          "line": 3403,
+          "signature": "const st = students.find(s => s.student_id === stId);",
+          "exported": false
+        },
+        {
+          "name": "profile",
+          "kind": "function",
+          "line": 3423,
+          "signature": "const profile = profiles.find(p => p.email === parent.email);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 3452,
+          "signature": "const target = items.find(i => i.id === userId);",
+          "exported": false
+        },
+        {
+          "name": "profile",
+          "kind": "function",
+          "line": 3459,
+          "signature": "const profile = profiles.find(p => p.email === target.email);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 3472,
+          "signature": "const target = admins.find(a => a.id === adminId);",
+          "exported": false
+        },
+        {
+          "name": "profile",
+          "kind": "function",
+          "line": 3479,
+          "signature": "const profile = profiles.find(p => p.staff_id === target.staff_id);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 3501,
+          "signature": "const target = items.find(i => i.id === userId);",
+          "exported": false
+        },
+        {
+          "name": "p",
+          "kind": "function",
+          "line": 3535,
+          "signature": "const p = profiles.find(pr => pr.id === user.id || pr.staff_id === user.staff_id || pr.email === user.email);",
+          "exported": false
+        },
+        {
+          "name": "a",
+          "kind": "function",
+          "line": 3539,
+          "signature": "const a = admins.find(adm => adm.id === user.id || adm.staff_id === user.staff_id);",
+          "exported": false
+        },
+        {
+          "name": "p",
+          "kind": "function",
+          "line": 3566,
+          "signature": "const p = profiles.find(pr => pr.id === user.id || pr.staff_id === user.staff_id);",
+          "exported": false
+        },
+        {
+          "name": "p",
+          "kind": "function",
+          "line": 3590,
+          "signature": "const p = profiles.find(pr => pr.id === user.id || pr.staff_id === user.staff_id);",
+          "exported": false
+        },
+        {
+          "name": "p",
+          "kind": "function",
+          "line": 3622,
+          "signature": "const p = profiles.find(pr => pr.id === user.id || pr.staff_id === oldStaffId || pr.email === email);",
+          "exported": false
+        },
+        {
+          "name": "a",
+          "kind": "function",
+          "line": 3632,
+          "signature": "const a = admins.find(adm => adm.id === user.id || adm.staff_id === oldStaffId);",
+          "exported": false
+        },
+        {
+          "name": "filtered",
+          "kind": "function",
+          "line": 3681,
+          "signature": "const filtered = attendance.filter(a => {",
+          "exported": false
+        },
+        {
+          "name": "student",
+          "kind": "function",
+          "line": 3682,
+          "signature": "const student = students.find(s => s.student_id === a.student_id);",
+          "exported": false
+        },
+        {
+          "name": "filtered",
+          "kind": "function",
+          "line": 3727,
+          "signature": "const filtered = attendance.filter(a => {",
+          "exported": false
+        },
+        {
+          "name": "student",
+          "kind": "function",
+          "line": 3728,
+          "signature": "const student = students.find(s => s.student_id === a.student_id);",
+          "exported": false
+        },
+        {
+          "name": "presentCount",
+          "kind": "function",
+          "line": 3744,
+          "signature": "const presentCount = filtered.filter(a => a.status === 'Present').length;",
+          "exported": false
+        },
+        {
+          "name": "lateCount",
+          "kind": "function",
+          "line": 3745,
+          "signature": "const lateCount = filtered.filter(a => a.status === 'Late').length;",
+          "exported": false
+        },
+        {
+          "name": "absentCount",
+          "kind": "function",
+          "line": 3746,
+          "signature": "const absentCount = filtered.filter(a => a.status === 'Absent').length;",
+          "exported": false
+        },
+        {
+          "name": "comp",
+          "kind": "function",
+          "line": 3800,
+          "signature": "const comp = complaints.find(c => c.id === complaintId);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 3884,
+          "signature": "const target = students.find(s => s.id === userId || s.student_id === userId);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 3890,
+          "signature": "const target = teachers.find(t => t.id === userId || t.staff_id === userId);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 3896,
+          "signature": "const target = parents.find(p => p.id === userId);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 3902,
+          "signature": "const target = admins.find(a => a.id === userId || a.staff_id === userId);",
+          "exported": false
+        },
+        {
+          "name": "toDeleteIds",
+          "kind": "function",
+          "line": 4074,
+          "signature": "const toDeleteIds = Array.from(checkboxes).map(cb => cb.getAttribute(\"data-id\"));",
+          "exported": false
+        },
+        {
+          "name": "toDeleteIds",
+          "kind": "function",
+          "line": 4194,
+          "signature": "const toDeleteIds = Array.from(checkboxes).map(cb => cb.getAttribute(\"data-id\"));",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 4217,
+          "signature": "const target = courses.find(c => c.id === courseId);",
+          "exported": false
+        },
+        {
+          "name": "updatedCourses",
+          "kind": "function",
+          "line": 4222,
+          "signature": "const updatedCourses = courses.filter(c => c.id !== courseId);",
+          "exported": false
+        },
+        {
+          "name": "selectedIds",
+          "kind": "function",
+          "line": 4238,
+          "signature": "const selectedIds = Array.from(checkboxes).map(cb => cb.getAttribute(\"data-id\"));",
+          "exported": false
+        },
+        {
+          "name": "updatedCourses",
+          "kind": "function",
+          "line": 4240,
+          "signature": "const updatedCourses = courses.filter(c => !selectedIds.includes(c.id));",
+          "exported": false
+        },
+        {
+          "name": "filtered",
+          "kind": "function",
+          "line": 4256,
+          "signature": "const filtered = auditLogs.filter(l => {",
+          "exported": false
+        },
+        {
+          "name": "course",
+          "kind": "function",
+          "line": 4317,
+          "signature": "const course = courses.find(c => c.course_code === e.course_code);",
+          "exported": false
+        },
+        {
+          "name": "data",
+          "kind": "function",
+          "line": 4324,
+          "signature": "const data   = labels.map(d => deptMap[d].enrolled);",
+          "exported": false
+        },
+        {
+          "name": "COLORS",
+          "kind": "constant",
+          "line": 4330,
+          "signature": "const COLORS = [",
+          "exported": false
+        },
+        {
+          "name": "BORDERS",
+          "kind": "component",
+          "line": 4338,
+          "signature": "const BORDERS = COLORS.map(c => c.replace('0.75', '1'));",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332644965
+    },
+    "scratch/verify_phase3.js": {
+      "path": "scratch/verify_phase3.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "bb40a4ce248e2d66a60d054583181f778924c79f",
+      "size": 9543,
+      "lines": 230,
+      "symbols": [
+        {
+          "name": "localStorageMock",
+          "kind": "function",
+          "line": 8,
+          "signature": "const localStorageMock = (() => {",
+          "exported": false
+        },
+        {
+          "name": "targetParent",
+          "kind": "function",
+          "line": 194,
+          "signature": "const targetParent = parents.find(p => p.id === parentUser.id);",
+          "exported": false
+        }
+      ],
+      "imports": [
+        "fs",
+        "vm"
+      ],
+      "indexedAt": 1789332644984
+    },
+    "scratch/test_verify_logic.js": {
+      "path": "scratch/test_verify_logic.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "8447c6baa1987fad8db504c3c0657428dd3fb7ae",
+      "size": 742,
+      "lines": 25,
+      "symbols": [
+        {
+          "name": "SUPABASE_URL",
+          "kind": "constant",
+          "line": 1,
+          "signature": "const SUPABASE_URL = \"https://cfwwmqbhqgytypypkyce.supabase.co\";",
+          "exported": false
+        },
+        {
+          "name": "ANON_KEY",
+          "kind": "constant",
+          "line": 2,
+          "signature": "const ANON_KEY = \"sb_publishable_erwDqEwgrgcEIKHWCQQU7w_U-ZWOQTw\";",
+          "exported": false
+        },
+        {
+          "name": "testLogic",
+          "kind": "function",
+          "line": 4,
+          "signature": "async function testLogic() {",
+          "exported": false
+        },
+        {
+          "name": "json",
+          "kind": "function",
+          "line": 20,
+          "signature": "const json = await res.json().catch(() => ({}));",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332645012
+    },
+    "scratch/test_verify_clean.js": {
+      "path": "scratch/test_verify_clean.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "6d3eb4f150becdca0a9cb90a82cb975fef2eed50",
+      "size": 3030,
+      "lines": 51,
+      "symbols": [
+        {
+          "name": "dupes",
+          "kind": "function",
+          "line": 14,
+          "signature": "const dupes = Object.entries(counts).filter(([_, c]) => c > 1);",
+          "exported": false
+        }
+      ],
+      "imports": [
+        "fs",
+        "path"
+      ],
+      "indexedAt": 1789332645044
+    },
+    "scratch/test_user_requirements.js": {
+      "path": "scratch/test_user_requirements.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "37b9632202c54f26e4bb276db029b9c552534894",
+      "size": 4248,
+      "lines": 109,
+      "symbols": [
+        {
+          "name": "fakeEvt",
+          "kind": "function",
+          "line": 82,
+          "signature": "const fakeEvt = { preventDefault: () => {} };",
+          "exported": false
+        },
+        {
+          "name": "foundEvt",
+          "kind": "function",
+          "line": 87,
+          "signature": "const foundEvt = events.find(e => e.title === 'Annual Tech Symposium 2026');",
+          "exported": false
+        }
+      ],
+      "imports": [
+        "fs",
+        "path",
+        "jsdom"
+      ],
+      "indexedAt": 1789332645076
+    },
+    "scratch/test_teacher_views.js": {
+      "path": "scratch/test_teacher_views.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "d30f6937d1d66c87c6d51a0641b111321115a43f",
+      "size": 2045,
+      "lines": 70,
+      "symbols": [],
+      "imports": [
+        "fs"
+      ],
+      "indexedAt": 1789332645104
+    },
+    "scratch/test_supabase_auth.js": {
+      "path": "scratch/test_supabase_auth.js",
+      "language": "javascript",
+      "role": "other",
+      "hash": "3d4f25639b445f0409327e7cf271598a48f5a036",
+      "size": 3144,
+      "lines": 90,
+      "symbols": [
+        {
+          "name": "SUPABASE_URL",
+          "kind": "constant",
+          "line": 1,
+          "signature": "const SUPABASE_URL = \"https://cfwwmqbhqgytypypkyce.supabase.co\";",
+          "exported": false
+        },
+        {
+          "name": "ANON_KEY",
+          "kind": "constant",
+          "line": 2,
+          "signature": "const ANON_KEY = \"sb_publishable_erwDqEwgrgcEIKHWCQQU7w_U-ZWOQTw\";",
+          "exported": false
+        },
+        {
+          "name": "testSupabaseAuth",
+          "kind": "function",
+          "line": 4,
+          "signature": "async function testSupabaseAuth() {",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332645117
+    },
+    "js/views/teacherView.js": {
+      "path": "js/views/teacherView.js",
+      "language": "javascript",
+      "role": "component",
+      "hash": "cbcc5580bfd9c11eceb99348de64eb9da2f6a219",
+      "size": 60641,
+      "lines": 1086,
+      "symbols": [
+        {
+          "name": "matchedTeacher",
+          "kind": "function",
+          "line": 13,
+          "signature": "const matchedTeacher = teachers.find(t =>",
+          "exported": false
+        },
+        {
+          "name": "filtered",
+          "kind": "function",
+          "line": 497,
+          "signature": "const filtered = attendanceLogs.filter(a => {",
+          "exported": false
+        },
+        {
+          "name": "studentEnrollments",
+          "kind": "function",
+          "line": 555,
+          "signature": "const studentEnrollments = enrollments.filter(e => e.student_id === firstStudent.student_id);",
+          "exported": false
+        },
+        {
+          "name": "studentEnrollments",
+          "kind": "function",
+          "line": 607,
+          "signature": "const studentEnrollments = enrollments.filter(e => e.student_id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "studentObj",
+          "kind": "function",
+          "line": 651,
+          "signature": "const studentObj = students.find(s => s.student_id === stId || s.id === stId);",
+          "exported": false
+        },
+        {
+          "name": "existingIdx",
+          "kind": "function",
+          "line": 652,
+          "signature": "const existingIdx = grades.findIndex(g => g.student_id === stId && g.course_code === code);",
+          "exported": false
+        },
+        {
+          "name": "targetEnrs",
+          "kind": "function",
+          "line": 677,
+          "signature": "const targetEnrs = enrollments.filter(e => e.student_id === stId && (e.course_code === code || code.startsWith(e.course_code)));",
+          "exported": false
+        },
+        {
+          "name": "studentGrades",
+          "kind": "function",
+          "line": 685,
+          "signature": "const studentGrades = grades.filter(g => g.student_id === stId && g.is_published !== false);",
+          "exported": false
+        },
+        {
+          "name": "targetStudent",
+          "kind": "function",
+          "line": 694,
+          "signature": "const targetStudent = students.find(s => s.student_id === stId);",
+          "exported": false
+        },
+        {
+          "name": "announcements",
+          "kind": "function",
+          "line": 707,
+          "signature": "const announcements = (store.get(\"announcements\") || []).filter(a => !a.target_audience || a.target_audience === 'ALL' || a.target_audience === 'TEACHERS');",
+          "exported": false
+        },
+        {
+          "name": "teacherNotifs",
+          "kind": "function",
+          "line": 764,
+          "signature": "const teacherNotifs = complaints.filter(c =>",
+          "exported": false
+        },
+        {
+          "name": "comp",
+          "kind": "function",
+          "line": 813,
+          "signature": "const comp = complaints.find(c => c.id === complaintId);",
+          "exported": false
+        },
+        {
+          "name": "tc",
+          "kind": "function",
+          "line": 1008,
+          "signature": "const tc = teachers.find(t => t.staff_id === (user.teacher_data ? user.teacher_data.staff_id : null) || t.email === email);",
+          "exported": false
+        },
+        {
+          "name": "pr",
+          "kind": "function",
+          "line": 1017,
+          "signature": "const pr = profiles.find(p => p.id === user.id || p.email === email);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 1049,
+          "signature": "const target = teachers.find(t => t.staff_id === (tcData ? tcData.staff_id : null) || t.email === user.email);",
+          "exported": false
+        },
+        {
+          "name": "comp",
+          "kind": "function",
+          "line": 1072,
+          "signature": "const comp = complaints.find(c => c.id === complaintId);",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332645148
+    },
+    "js/views/studentView.js": {
+      "path": "js/views/studentView.js",
+      "language": "javascript",
+      "role": "component",
+      "hash": "8cffb569361989bea47624bfb212b6df7530c0e0",
+      "size": 96391,
+      "lines": 1659,
+      "symbols": [
+        {
+          "name": "enrollments",
+          "kind": "function",
+          "line": 8,
+          "signature": "const enrollments = store.get(\"enrollments\").filter(e => e.student_id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "grades",
+          "kind": "function",
+          "line": 9,
+          "signature": "const grades = store.get(\"grades\").filter(g => g.student_id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "attendance",
+          "kind": "function",
+          "line": 10,
+          "signature": "const attendance = store.get(\"attendance\").filter(a => a.student_id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "fees",
+          "kind": "function",
+          "line": 11,
+          "signature": "const fees = store.get(\"fees\").find(f => f.student_id === studentId) || { total_amount: 4800, paid_amount: 0, balance_due: 4800, status: \"Pending\" };",
+          "exported": false
+        },
+        {
+          "name": "presentClasses",
+          "kind": "function",
+          "line": 20,
+          "signature": "const presentClasses = attendance.filter(a => a.status === \"Present\" || a.status === \"Late\").length;",
+          "exported": false
+        },
+        {
+          "name": "enrollments",
+          "kind": "function",
+          "line": 146,
+          "signature": "const enrollments = store.get(\"enrollments\").filter(e => e.student_id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "grades",
+          "kind": "function",
+          "line": 147,
+          "signature": "const grades = store.get(\"grades\").filter(g => g.student_id === studentId);",
+          "exported": false
+        },
+        {
+          "name": "enr",
+          "kind": "function",
+          "line": 154,
+          "signature": "const enr = enrollments.find(e => e.course_code === g.course_code);",
+          "exported": false
+        },
+        {
+          "name": "labels",
+          "kind": "function",
+          "line": 195,
+          "signature": "const labels = chartDataList.map(d => d.code);",
+          "exported": false
+        },
+        {
+          "name": "assessmentScores",
+          "kind": "function",
+          "line": 196,
+          "signature": "const assessmentScores = chartDataList.map(d => d.assessment);",
+          "exported": false
+        },
+        {
+          "name": "examScores",
+          "kind": "function",
+          "line": 197,
+          "signature": "const examScores = chartDataList.map(d => d.exam);",
+          "exported": false
+        },
+        {
+          "name": "cleanStr",
+          "kind": "function",
+          "line": 279,
+          "signature": "const cleanStr = s => (s || '').toLowerCase().replace(/[^a-z0-9]/g, '');",
+          "exported": false
+        },
+        {
+          "name": "enrollments",
+          "kind": "function",
+          "line": 286,
+          "signature": "const enrollments = store.get(\"enrollments\").filter(e => e.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "grades",
+          "kind": "function",
+          "line": 287,
+          "signature": "const grades = store.get(\"grades\").filter(g => g.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "enrolledCodes",
+          "kind": "function",
+          "line": 288,
+          "signature": "const enrolledCodes = enrollments.map(e => e.course_code);",
+          "exported": false
+        },
+        {
+          "name": "assignedCourses",
+          "kind": "function",
+          "line": 291,
+          "signature": "const assignedCourses = courses.filter(c => {",
+          "exported": false
+        },
+        {
+          "name": "failedGrades",
+          "kind": "function",
+          "line": 315,
+          "signature": "const failedGrades = grades.filter(g => (g.letter_grade === 'F' || (g.total_score !== undefined && g.total_score < 50)));",
+          "exported": false
+        },
+        {
+          "name": "totalCredits",
+          "kind": "function",
+          "line": 317,
+          "signature": "let totalCredits = enrollments.reduce((acc, curr) => acc + Number(curr.credit_hours || 3), 0);",
+          "exported": false
+        },
+        {
+          "name": "resitEnr",
+          "kind": "function",
+          "line": 425,
+          "signature": "const resitEnr = enrollments.find(e => e.student_id === student.student_id && (e.course_code === fg.course_code || e.course_code.startsWith(fg.course_code)));",
+          "exported": false
+        },
+        {
+          "name": "newEnrollments",
+          "kind": "function",
+          "line": 479,
+          "signature": "const newEnrollments = Array.from(checkboxes).map(cb => ({",
+          "exported": false
+        },
+        {
+          "name": "allEnrollments",
+          "kind": "function",
+          "line": 490,
+          "signature": "let allEnrollments = store.get(\"enrollments\").filter(e => e.student_id !== student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "resitEnrollments",
+          "kind": "function",
+          "line": 507,
+          "signature": "const resitEnrollments = Array.from(checkboxes).map(cb => ({",
+          "exported": false
+        },
+        {
+          "name": "enrollments",
+          "kind": "function",
+          "line": 529,
+          "signature": "const enrollments = store.get(\"enrollments\").filter(e => e.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "enrollments",
+          "kind": "function",
+          "line": 543,
+          "signature": "const enrollments = store.get(\"enrollments\").filter(e => e.student_id === student.student_id && e.is_resit);",
+          "exported": false
+        },
+        {
+          "name": "enrollments",
+          "kind": "function",
+          "line": 553,
+          "signature": "const enrollments = store.get(\"enrollments\").filter(e => e.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "grades",
+          "kind": "function",
+          "line": 554,
+          "signature": "const grades = store.get(\"grades\").filter(g => g.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "publishedGrades",
+          "kind": "function",
+          "line": 556,
+          "signature": "const publishedGrades = grades.filter(g => g.is_published);",
+          "exported": false
+        },
+        {
+          "name": "foundGrade",
+          "kind": "function",
+          "line": 631,
+          "signature": "const foundGrade = grades.find(g => g.course_code === enr.course_code && g.is_published);",
+          "exported": false
+        },
+        {
+          "name": "enrollments",
+          "kind": "function",
+          "line": 677,
+          "signature": "let enrollments = store.get(\"enrollments\").filter(e => e.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "grades",
+          "kind": "function",
+          "line": 678,
+          "signature": "let grades = store.get(\"grades\").filter(g => g.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "getCourseLevel",
+          "kind": "function",
+          "line": 680,
+          "signature": "const getCourseLevel = (enr) => {",
+          "exported": false
+        },
+        {
+          "name": "foundCourse",
+          "kind": "function",
+          "line": 682,
+          "signature": "const foundCourse = allCourses.find(c => c.course_code === enr.course_code);",
+          "exported": false
+        },
+        {
+          "name": "foundGrade",
+          "kind": "function",
+          "line": 709,
+          "signature": "const foundGrade = grades.find(g => g.course_code === enr.course_code && g.is_published);",
+          "exported": false
+        },
+        {
+          "name": "foundGrade",
+          "kind": "function",
+          "line": 740,
+          "signature": "const foundGrade = grades.find(g => g.course_code === enr.course_code && g.is_published);",
+          "exported": false
+        },
+        {
+          "name": "grades",
+          "kind": "function",
+          "line": 773,
+          "signature": "const grades = store.get(\"grades\").filter(g => g.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "attendance",
+          "kind": "function",
+          "line": 779,
+          "signature": "const attendance = (store.get(\"attendance\") || []).filter(a => a.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "enrollments",
+          "kind": "function",
+          "line": 780,
+          "signature": "const enrollments = (store.get(\"enrollments\") || []).filter(e => e.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "semesterEnrollments",
+          "kind": "function",
+          "line": 782,
+          "signature": "const semesterEnrollments = enrollments.filter(e => !e.semester || e.semester.toLowerCase().includes(currentSemester.toLowerCase()));",
+          "exported": false
+        },
+        {
+          "name": "enrollments",
+          "kind": "function",
+          "line": 890,
+          "signature": "const enrollments = (store.get(\"enrollments\") || []).filter(e => e.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "filtered",
+          "kind": "function",
+          "line": 891,
+          "signature": "const filtered = enrollments.filter(e => !e.semester || e.semester.toLowerCase().includes(semesterVal.toLowerCase()));",
+          "exported": false
+        },
+        {
+          "name": "feeData",
+          "kind": "function",
+          "line": 984,
+          "signature": "const feeData = store.get(\"fees\").find(f => f.student_id === student.student_id) || {",
+          "exported": false
+        },
+        {
+          "name": "feeData",
+          "kind": "function",
+          "line": 1081,
+          "signature": "const feeData = (store.get(\"fees\") || []).find(f => f.student_id === student.student_id) || { balance_due: 2500 };",
+          "exported": false
+        },
+        {
+          "name": "feeIndex",
+          "kind": "function",
+          "line": 1156,
+          "signature": "const feeIndex = fees.findIndex(f => f.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "feeData",
+          "kind": "function",
+          "line": 1213,
+          "signature": "const feeData = (store.get(\"fees\") || []).find(f => f.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "pItem",
+          "kind": "function",
+          "line": 1214,
+          "signature": "const pItem = feeData ? (feeData.payment_history || []).find(p => p.reference === ref) : null;",
+          "exported": false
+        },
+        {
+          "name": "notifications",
+          "kind": "function",
+          "line": 1230,
+          "signature": "const notifications = allNotifs.filter(n => !deletedAlertIds.includes(n.id) && (n.user_id === student.student_id || n.target_audience === 'student' || n.target_",
+          "exported": false
+        },
+        {
+          "name": "announcements",
+          "kind": "function",
+          "line": 1231,
+          "signature": "const announcements = (store.get(\"announcements\") || []).filter(a => !deletedAlertIds.includes(a.id) && (!a.target_audience || a.target_audience === 'ALL' || a.",
+          "exported": false
+        },
+        {
+          "name": "complaints",
+          "kind": "function",
+          "line": 1232,
+          "signature": "const complaints = (store.get(\"complaints\") || []).filter(c => c.student_id === student.student_id);",
+          "exported": false
+        },
+        {
+          "name": "st",
+          "kind": "function",
+          "line": 1555,
+          "signature": "const st = students.find(s => s.student_id === (user.student_data ? user.student_data.student_id : null) || s.email === email);",
+          "exported": false
+        },
+        {
+          "name": "pr",
+          "kind": "function",
+          "line": 1567,
+          "signature": "const pr = profiles.find(p => p.id === user.id || p.email === email);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 1601,
+          "signature": "const target = students.find(s => s.student_id === (student ? student.student_id : null) || s.email === user.email);",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332645180
+    },
+    "js/views/parentView.js": {
+      "path": "js/views/parentView.js",
+      "language": "javascript",
+      "role": "component",
+      "hash": "4b7f6f5e111dbacc236e3790dc01acce07afe9e5",
+      "size": 41642,
+      "lines": 721,
+      "symbols": [
+        {
+          "name": "parentRecord",
+          "kind": "function",
+          "line": 12,
+          "signature": "const parentRecord = parents.find(p =>",
+          "exported": false
+        },
+        {
+          "name": "linkedStudents",
+          "kind": "function",
+          "line": 20,
+          "signature": "const linkedStudents = students.filter(s => linkedIds.includes(s.student_id));",
+          "exported": false
+        },
+        {
+          "name": "feeObj",
+          "kind": "function",
+          "line": 36,
+          "signature": "const feeObj = allFees.find(f => f.student_id === id);",
+          "exported": false
+        },
+        {
+          "name": "attendanceLogs",
+          "kind": "function",
+          "line": 48,
+          "signature": "const attendanceLogs = (store.get(\"attendance\") || []).filter(a => child && a.student_id === child.student_id);",
+          "exported": false
+        },
+        {
+          "name": "student",
+          "kind": "function",
+          "line": 270,
+          "signature": "const student = students.find(s => s.student_id === id);",
+          "exported": false
+        },
+        {
+          "name": "grades",
+          "kind": "function",
+          "line": 277,
+          "signature": "const grades = (store.get(\"grades\") || []).filter(g => g.student_id === id && g.is_published);",
+          "exported": false
+        },
+        {
+          "name": "student",
+          "kind": "function",
+          "line": 336,
+          "signature": "const student = (store.get(\"students\") || []).find(s => s.student_id === stId);",
+          "exported": false
+        },
+        {
+          "name": "grades",
+          "kind": "function",
+          "line": 337,
+          "signature": "const grades = (store.get(\"grades\") || []).filter(g => g.student_id === stId);",
+          "exported": false
+        },
+        {
+          "name": "wardAttendance",
+          "kind": "function",
+          "line": 345,
+          "signature": "const wardAttendance = attendance.filter(a => linkedIds.includes(a.student_id));",
+          "exported": false
+        },
+        {
+          "name": "fees",
+          "kind": "function",
+          "line": 413,
+          "signature": "let fees = feeDataList.find(f => f.student_id === currentWardId);",
+          "exported": false
+        },
+        {
+          "name": "wardStudent",
+          "kind": "function",
+          "line": 414,
+          "signature": "const wardStudent = students.find(s => s.student_id === currentWardId);",
+          "exported": false
+        },
+        {
+          "name": "st",
+          "kind": "function",
+          "line": 444,
+          "signature": "const st = students.find(s => s.student_id === id);",
+          "exported": false
+        },
+        {
+          "name": "pr",
+          "kind": "function",
+          "line": 660,
+          "signature": "const pr = parents.find(p => p.email === email || (p.parent_data && p.parent_data.email === email));",
+          "exported": false
+        },
+        {
+          "name": "prof",
+          "kind": "function",
+          "line": 669,
+          "signature": "const prof = profiles.find(p => p.id === user.id || p.email === email);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 700,
+          "signature": "const target = parents.find(p => p.email === user.email);",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332645209
+    },
+    "js/views/libraryView.js": {
+      "path": "js/views/libraryView.js",
+      "language": "javascript",
+      "role": "component",
+      "hash": "a0b99f4bd812f3bb0c234cccf4c08be0cdc3ccd3",
+      "size": 10003,
+      "lines": 177,
+      "symbols": [
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 107,
+          "signature": "const target = materials.find(m => m.id === id);",
+          "exported": false
+        },
+        {
+          "name": "target",
+          "kind": "function",
+          "line": 136,
+          "signature": "const target = materials.find(m => m.id === id);",
+          "exported": false
+        }
+      ],
+      "imports": [],
+      "indexedAt": 1789332645290
+    }
+  },
+  "architecture": [
+    {
+      "role": "component",
+      "label": "Components",
+      "files": [
+        "js/views/adminView.js",
+        "js/views/authView.js",
+        "js/views/libraryView.js",
+        "js/views/parentView.js",
+        "js/views/studentView.js",
+        "js/views/teacherView.js"
+      ]
+    },
+    {
+      "role": "config",
+      "label": "Configuration",
+      "files": [
+        "js/config.js"
+      ]
+    },
+    {
+      "role": "other",
+      "label": "Other",
+      "files": [
+        "generate_proposal_docx.js",
+        "generate_proposal_docx.py",
+        "js/aiAssistant.js",
+        "js/app.js",
+        "js/pdfHelper.js",
+        "js/store.js",
+        "js/supabaseClient.js",
+        "js/validators.js",
+        "scratch/check_dupes.js",
+        "scratch/check_modals.js",
+        "scratch/simulate_browser_load.js",
+        "scratch/test_app_quicklogin.js",
+        "scratch/test_calendar_link.js",
+        "scratch/test_email_otp.js",
+        "scratch/test_full_email_otp.js",
+        "scratch/test_refresh_persistence.js",
+        "scratch/test_resolve.js",
+        "scratch/test_student_views.js",
+        "scratch/test_supabase_auth.js",
+        "scratch/test_teacher_views.js",
+        "scratch/test_user_requirements.js",
+        "scratch/test_verify_clean.js",
+        "scratch/test_verify_logic.js",
+        "scratch/verify_phase3.js"
+      ]
+    }
+  ]
+}
