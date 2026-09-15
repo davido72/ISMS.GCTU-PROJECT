@@ -285,7 +285,7 @@ class Store {
             const defaultSystemSettings = {
                 general: {
                     university_name: "Ghana Communication Technology University (GCTU)",
-                    logo_url: "D:\\idVm29BNyr.jpeg",
+                    logo_url: "C:\\idVm29BNyr.jpeg",
                     contact_email: "info@gctu.edu.gh",
                     contact_phone: "+233302221412",
                     academic_year: "2026/2027",
